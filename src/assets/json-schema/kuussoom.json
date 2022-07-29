@@ -1,0 +1,44 @@
+{
+  "schema": {
+    "type": "object",
+    "properties": {
+      "vip": {
+        "type": "boolean",
+        "title": "VIP"
+      },
+      "comments": {
+        "type": "string",
+        "title": ""
+      },
+      "exTran": {
+        "type": "boolean",
+        "title": "Exclusive transport"
+      },
+      "nullC": {
+        "type": "null",
+        "title": "Preferred method of contact"
+      },
+      "phone": {
+        "type": "object",
+        "title": "Phone",
+        "properties": {
+          "subFields": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["dateRequested"],
+              "properties": {
+                "dateRequested": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      },
+      "email": {
+        "type": "boolean",
+        "title": "Email"
+      }
+    }
+  },
+  "model": {}
+}

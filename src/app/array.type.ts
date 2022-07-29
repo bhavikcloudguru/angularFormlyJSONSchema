@@ -14,19 +14,14 @@ import { FieldArrayType } from '@ngx-formly/core';
 
     <div *ngFor="let field of field.fieldGroup;let i = index;" class="row align-items-center">
       <formly-field class="col" [field]="field"></formly-field>
-      <div *ngIf="field.templateOptions.removable !== false" class="col-2 text-right">
-        <button class="btn btn-danger" type="button" (click)="remove(i)">-</button>
-      </div>
+     
     </div>
 
-    <div class="d-flex flex-row-reverse">
-      <button class="btn btn-primary" type="button" (click)="add()">+</button>
-    </div>
+   
   </div>
   `,
 })
 export class ArrayTypeComponent extends FieldArrayType {}
-
 
 /**  Copyright 2018 Google Inc. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
